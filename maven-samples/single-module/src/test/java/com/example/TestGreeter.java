@@ -45,4 +45,10 @@ public class TestGreeter {
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
   
+  @Test
+  public void greetShouldIncludeGreetingMessage() {
+    String someone = "World, Thanks you making me Happy new SCM polling commit from local repo second automate build try";
+
+    assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
+  }
 }
